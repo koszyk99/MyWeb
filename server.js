@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 8080;
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, { "Content-Type": "text/plain" });
-  const welcomeText = process.env.WELCOME_TEXT || "Hello Azure domyślnie!";
+  const welcomeText = process.env.WELCOME_TEXT || "Hello Azure!";
 res.end(welcomeText);
 
 });
